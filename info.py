@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/166a5a50e52563960e937.jpg')).split() #SAMPLE PIC
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/7ba7359f9517c0d8f80a8.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -61,7 +61,7 @@ CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+F2LMiCAa0QMxYmU1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/HowToUseBot101')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001891893870'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002026573865'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'typeanymovieHD4')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -100,8 +100,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://intermediate-jenica-r3.koyeb.app/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://intermediate-jenica-r3.koyeb.app/".format(FQDN, PORT)
+URL = "https://r-bots.ishortener.in/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://r-bots.ishortener.in/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -116,9 +116,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://intermediate-jenica-r3.koyeb.app/".format(FQDN)
+    URL = "https://r-bots.ishortener.in/".format(FQDN)
 else:
-    URL = "https://intermediate-jenica-r3.koyeb.app/".format(FQDN)
+    URL = "https://r-bots.ishortener.in/".format(FQDN)
 
 
 
